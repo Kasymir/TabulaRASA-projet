@@ -1,0 +1,21 @@
+#page-wrapper {
+	background-image: url(../images/amp.png);
+	background-repeat: repeat;
+}
+.sidebar {
+	/* margin-top: 81px !important; */
+}
+.navbar {
+	/* min-height: 80px !important; */
+	background-image: url(../images/topamp.png);
+	background-size: cover;
+}
+
+@media (min-width: 977px) {
+	.sidebar {
+		margin-top: 81px !important;
+	}
+	.navbar {
+		min-height: 80px !important;
+	}
+}
