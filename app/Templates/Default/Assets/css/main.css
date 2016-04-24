@@ -11,11 +11,27 @@
 	background-size: cover;
 }
 
+.navbar-inverse {
+    background-color: #000000;
+  }
+
 @media (min-width: 977px) {
 	.sidebar {
 		margin-top: 81px !important;
 	}
 	.navbar {
 		min-height: 80px !important;
+		background-size: cover;
+	}
+}
+
+@media (min-width: 1544px) {
+	.sidebar {
+		margin-top: 81px !important;
+	}
+	.navbar {
+		min-height: 80px !important;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 }
