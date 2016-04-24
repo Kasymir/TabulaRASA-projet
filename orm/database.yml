@@ -14,11 +14,11 @@ tablature:
   idInstrument: int
 
 genre:
-  nom: varchar
+  nom: varchar(255)
 
 artiste:
-  nom: varchar
+  nom: varchar(255)
   nbTab: int
 
 instrument:
-  type: varchar
+  type: varchar(255)

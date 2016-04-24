@@ -13,7 +13,7 @@ namespace App\Models\Tables;
 use Helpers\DB\Entity;
 
 class Artiste extends Entity {
-    public $nom;     // varchar
+    public $nom;     // varchar(255)
     public $nbTab;     // int
 
     public function __construct(

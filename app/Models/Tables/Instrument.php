@@ -13,7 +13,7 @@ namespace App\Models\Tables;
 use Helpers\DB\Entity;
 
 class Instrument extends Entity {
-    public $type;     // varchar
+    public $type;     // varchar(255)
 
     public function __construct(
         $type = "",
