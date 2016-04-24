@@ -4,6 +4,21 @@ user:
   password: varchar(255)
   cookie: varchar(255)
 
-test:
-  toto: int
-  titi: datetime
+tablature:
+  titre: varchar(255)
+  album: varchar(255)
+  cheminTab: varchar(255)
+  dateAjout: datetime
+  idArtiste: int
+  idGenre: int
+  idInstrument: int
+
+genre:
+  nom: varchar
+
+artiste:
+  nom: varchar
+  nbTab: int
+
+instrument:
+  type: varchar
