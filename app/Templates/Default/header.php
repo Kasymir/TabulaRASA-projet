@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?=DIR;?>">TabaluRasa</a>
+                <a class="navbar-brand" href="<?=DIR;?>"><img src='<?=Url::templatePath();?>images/nom.png'  class="nomtop" alt='<?=SITETITLE;?>'/></a>
             </div>
             <!-- /.navbar-header -->
 

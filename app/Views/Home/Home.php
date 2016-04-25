@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <h1 class="page-header text-center"><?=$title;?></h1>
-            <img src='<?=Url::templatePath();?>images/logo_.png'  class="img-responsive" alt='<?=SITETITLE;?>'>
+            <img src='<?=Url::templatePath();?>images/logo.png'  class="img-responsive" alt='<?=SITETITLE;?>'>
             <p><?=$welcomeMessage;?></p>
             <div class="input-group custom-search-form">
                 <input type="text" class="form-control" placeholder="Search...">

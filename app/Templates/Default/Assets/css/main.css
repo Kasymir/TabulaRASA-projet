@@ -15,17 +15,18 @@
     background-color: #000000;
   }
 
-@media (min-width: 977px) {
+@media (min-width: 768px) {
 	.sidebar {
-		margin-top: 81px !important;
+		margin-top: 61px !important;
 	}
 	.navbar {
-		min-height: 80px !important;
-		background-size: cover;
+		min-height: 60px !important;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 }
 
-@media (min-width: 1544px) {
+@media (min-width: 1336px) {
 	.sidebar {
 		margin-top: 81px !important;
 	}
@@ -34,4 +35,21 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
+}
+
+@media (min-width: 1544px) {
+	.sidebar {
+		margin-top: 101px !important;
+	}
+	.navbar {
+		min-height: 100px !important;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.nomtop {
+	height: auto !important;
+	width: 100% !important;
+	display: block !important;
 }
