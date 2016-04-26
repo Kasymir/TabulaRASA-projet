@@ -7,7 +7,7 @@ return [
 	'welcomeText' => 'Welcome',
 	'welcomeMessage' => '
 		Hello, welcome from the welcome controller! <br/>
-		This content can be changed in <code>/app/Views/Welcome/Welcome.php</code>
+		This content can be changed in <code>/app/Views/home/home.php</code>
 	',
 
 	// Subpage method

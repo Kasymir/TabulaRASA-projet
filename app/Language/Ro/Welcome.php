@@ -7,7 +7,7 @@ return array(
 	'welcomeText' => 'Bun venit',
 	'welcomeMessage' => '
 		Bună, bun venit la controlerul <code>welcome</code>! <br/>
-		Acest conținut poate fi modificat în <code>/app/views/welcome/welcome.php</code>
+		Acest conținut poate fi modificat în <code>/app/views/home/home.php</code>
 	',
 	// Metoda 'subpage'
 	'subpageText' => 'Subpagina',

@@ -8,7 +8,7 @@ return array(
 	'welcomeText' => 'Vítejte',
 	'welcomeMessage' => '
 		Dobrý den, vítá Vás úvodní kontroler! <br/>
-		Tento obsah lze změnit v <code>/app/views/welcome/welcome.php</code>
+		Tento obsah lze změnit v <code>/app/views/home/home.php</code>
 	',
 
 	// Subpage method

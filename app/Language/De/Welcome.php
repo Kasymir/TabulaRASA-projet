@@ -8,7 +8,7 @@ return array(
    'welcomeText' => 'Willkommen',
    'welcomeMessage' => '
        Hallo und Willkommen im welcome-Controller! <br />
-       Dieser Inhalt kann in <code>/app/views/welcome/welcome.php</code> geändert werden.
+       Dieser Inhalt kann in <code>/app/views/home/home.php</code> geändert werden.
    ',
 
    // Subpage method

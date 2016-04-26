@@ -8,7 +8,7 @@ return array(
 	'welcomeText' => 'Добро пожаловать!',
 	'welcomeMessage' => '
 		Здраствуй, добро пожаловать в привствующий контролер! <br/>
-		Содержимое этого файла может быть изменено в <code>app/views/welcome/welcome.php</code>
+		Содержимое этого файла может быть изменено в <code>app/views/home/home.php</code>
 	',
 
 	// Subpage method
