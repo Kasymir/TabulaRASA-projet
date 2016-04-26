@@ -31,8 +31,9 @@ class User extends Controller {
 
         if($_SESSION['yolo_loggedin'])
         {
-            Session::set('message', "Vous êtes déjà connecté en tant que $user->login");
-            Session::set('message_type', 'alert-error');
+            $login=$_SESSION['yolo_login'];
+            Session::set('message', "Vous êtes déjà connecté en tant que $login");
+            Session::set('message_type', 'alert-warning');
             Url::redirect();
         }
 
@@ -97,6 +98,13 @@ class User extends Controller {
 
     public function change_password() {
 
+        if(!$_SESSION['yolo_loggedin'])
+        {
+            Session::set('message', "Vous devez vous connecter pour acceder à cette page");
+            Session::set('message_type', 'alert-warning');
+            Url::redirect('utilisateur/login');
+        }
+
         //Sanitize Data using Gump helper
         $_POST = Gump::sanitize($_POST);
 
@@ -110,7 +118,7 @@ class User extends Controller {
             ));
 
             if ($is_valid === true) {
-                $user = $this->userSQL->find(Session::get('id'));
+                $user = $this->userSQL->findById(Session::get('id'));
 
                 if (Password::verify($_POST['current_password'], $user->password) === true) {
                     if ($_POST['password'] != $_POST['password-again']) {
@@ -141,6 +149,13 @@ class User extends Controller {
 
     public function register() {
 
+        if($_SESSION['yolo_loggedin'])
+        {
+            $login=$_SESSION['yolo_login'];
+            Session::set('message', "Vous êtes déjà connecté en tant que $login");
+            Session::set('message_type', 'alert-warning');
+            Url::redirect();
+        }
 
         //Sanitize Data using Gump helper
         $_POST = Gump::sanitize($_POST);
