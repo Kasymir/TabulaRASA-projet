@@ -28,6 +28,14 @@ class User extends Controller {
     }
 
     public function login() {
+
+        if($_SESSION['yolo_loggedin'])
+        {
+            Session::set('message', "Vous êtes déjà connecté en tant que $user->login");
+            Session::set('message_type', 'alert-error');
+            Url::redirect();
+        }
+
         //Sanitize Data using Gump helper
         $_POST = Gump::sanitize($_POST);
 
