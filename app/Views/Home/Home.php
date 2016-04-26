@@ -8,6 +8,8 @@
                 <div class="<?=$_SESSION['yolo_message_type'];?>">
                     <p><?=$_SESSION['yolo_message'];?></p>
                 </div>
+                <!-- On vide le message une fois affiché une fois -->
+                <?php unset($_SESSION['yolo_message']); ?>
 
             <p><?=$welcomeMessage;?></p>
             <div class="input-group custom-search-form">

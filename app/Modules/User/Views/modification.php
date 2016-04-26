@@ -7,6 +7,8 @@
                 <div class="<?=$_SESSION['yolo_message_type'];?>">
                     <p><?=$_SESSION['yolo_message'];?></p>
                 </div>
+                <!-- On vide le message une fois affiché une fois -->
+                <?php unset($_SESSION['yolo_message']); ?>
 
 				<form method='post' action="<?php echo DIR;?>utilisateur/modification">
 				    <label>Mot de passe courant</label><input type='password' name="current_password" placeholder="Votre mot de passe courant" required /><br />
