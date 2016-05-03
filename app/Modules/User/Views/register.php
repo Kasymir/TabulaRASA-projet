@@ -10,6 +10,10 @@
                 <!-- On vide le message une fois affiché une fois -->
                 <?php unset($_SESSION['yolo_message']); ?>
 
+                <!-- Affichage des erreurs #MUSH -->
+                <?= \Core\Error::display($_SESSION['yolo_error']); ?>
+                <?php unset($_SESSION['yolo_error']); ?>
+
 				<form method='post' action="<?php echo DIR;?>utilisateur/inscription">
 				    <label>Login</label><input type='text' name="login" placeholder="Votre login" required /><br />
 				    <label>email</label><input type='email' name="email" placeholder="Votre login" required /><br />

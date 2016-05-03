@@ -57,6 +57,7 @@ class User extends Controller {
 
                 if ($user == false || Password::verify($_POST['password'], $user->password) == false)
                     $error[] = 'Mauvaises données';
+                    Session::set('error', $error);
             } else {
                 // $is_valid holds an array for the errors.
                 $error = $is_valid;
@@ -123,9 +124,11 @@ class User extends Controller {
                 if (Password::verify($_POST['current_password'], $user->password) === true) {
                     if ($_POST['password'] != $_POST['password-again']) {
                         $error[] = 'Les deux mots de passe ne sont pas identiques';
+                        Session::set('error', $error);
                     }
                 } else {
                     $error[] = 'mot de passe courant incorrect';
+                    Session::set('error', $error);
                 }
             } else {
                 // $is_valid holds an array for the errors.
@@ -189,7 +192,7 @@ class User extends Controller {
 
             } else
                 $error = $is_valid;
-            print_r($error);
+                Session::set('error', $error);
             if (!$error) {
                 //Register and return the data as an array $data[]
                 $user = new \App\Models\Tables\User($_POST['login'], $_POST['email'], Password::make($_POST['password']), "");

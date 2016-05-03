@@ -10,6 +10,10 @@
                 <!-- On vide le message une fois affiché une fois -->
                 <?php unset($_SESSION['yolo_message']); ?>
 
+                <!-- Affichage des erreurs #MUSH -->
+                <?= \Core\Error::display($_SESSION['yolo_error']); ?>
+                <?php unset($_SESSION['yolo_error']); ?>
+
 				<form method='post' action="<?php echo DIR;?>utilisateur/modification">
 				    <label>Mot de passe courant</label><input type='password' name="current_password" placeholder="Votre mot de passe courant" required /><br />
 				    <label>Mot de passe</label><input type='password' name="password" placeholder="Votre nouveau mot de passe" required /><br />
