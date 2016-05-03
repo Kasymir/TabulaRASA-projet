@@ -3,6 +3,7 @@ user:
   email: varchar(255)
   password: varchar(255)
   cookie: varchar(255)
+  admin: bool
 
 tablature:
   titre: varchar(255)

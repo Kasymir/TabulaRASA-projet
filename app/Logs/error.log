@@ -266,3 +266,57 @@ Exception information:
 
 2016-04-03 9:28AM - require(/Users/audemard/Dropbox/public_html/simplemvc/basenova/app/Modules/Views/login.php): failed to open stream: No such file or directory in /Users/audemard/Dropbox/public_html/simplemvc/basenova/system/Core/View.php on line 62
 
+Exception information:
+
+           Date: May 03, 2016 13:07PM
+
+           Message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'admin' at row 1 INSERT INTO user VALUES(NULL,?,?,?,?,?)
+
+           Code: 0
+
+           File: D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\DBManager.php
+
+           Line: 59
+
+           Stack trace:
+
+           #0 D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\EntityManager.php(73): Helpers\DB\DBManager->execute(Array)
+#1 D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\EntityManager.php(45): Helpers\DB\EntityManager->insert(Object(App\Models\Tables\User))
+#2 D:\Documents\wamp64\www\TabulaRASA-projet\app\Modules\User\User.php(199): Helpers\DB\EntityManager->save(Object(App\Models\Tables\User))
+#3 [internal function]: App\Modules\User\User->register()
+#4 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(213): call_user_func_array(Array, Array)
+#5 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(244): Core\Router->invokeController('App\\Modules\\Use...', 'register', Array)
+#6 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(281): Core\Router->invokeObject('App\\Modules\\Use...', Array)
+#7 D:\Documents\wamp64\www\TabulaRASA-projet\app\Routes.php(46): Core\Router->dispatch()
+#8 D:\Documents\wamp64\www\TabulaRASA-projet\index.php(73): require('D:\\Documents\\wa...')
+#9 {main}
+
+           ---------
+
+Exception information:
+
+           Date: May 03, 2016 13:08PM
+
+           Message: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'admin' at row 1 INSERT INTO user VALUES(NULL,?,?,?,?,?)
+
+           Code: 0
+
+           File: D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\DBManager.php
+
+           Line: 59
+
+           Stack trace:
+
+           #0 D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\EntityManager.php(73): Helpers\DB\DBManager->execute(Array)
+#1 D:\Documents\wamp64\www\TabulaRASA-projet\system\Helpers\DB\EntityManager.php(45): Helpers\DB\EntityManager->insert(Object(App\Models\Tables\User))
+#2 D:\Documents\wamp64\www\TabulaRASA-projet\app\Modules\User\User.php(199): Helpers\DB\EntityManager->save(Object(App\Models\Tables\User))
+#3 [internal function]: App\Modules\User\User->register()
+#4 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(213): call_user_func_array(Array, Array)
+#5 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(244): Core\Router->invokeController('App\\Modules\\Use...', 'register', Array)
+#6 D:\Documents\wamp64\www\TabulaRASA-projet\system\Core\Router.php(281): Core\Router->invokeObject('App\\Modules\\Use...', Array)
+#7 D:\Documents\wamp64\www\TabulaRASA-projet\app\Routes.php(46): Core\Router->dispatch()
+#8 D:\Documents\wamp64\www\TabulaRASA-projet\index.php(73): require('D:\\Documents\\wa...')
+#9 {main}
+
+           ---------
+
