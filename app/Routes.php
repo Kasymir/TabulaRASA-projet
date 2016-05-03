@@ -26,6 +26,12 @@ Router::any('/utilisateur/login', 'App\Modules\User\User@login');
 Router::any('/utilisateur/logout', 'App\Modules\User\User@logout');
 Router::any('/utilisateur/modification', 'App\Modules\User\User@change_password');
 
+//Tab Routing :
+Router::any('/tablature/ajouter', 'App\Modules\Tab\Tab@add');
+Router::any('/tablature/supprimer', 'App\Modules\Tab\Tab@delete');
+Router::any('/tablature/modifier', 'App\Modules\Tab\Tab@modification');
+Router::any('/tablature/afficher', 'App\Modules\Tab\Tab@display');
+
 // ORM Generator
 if($_SERVER["SERVER_NAME"]=="localhost") {
     Router::any("generateorm",'App\Modules\ORM\ORMGenerator@index');

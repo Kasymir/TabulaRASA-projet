@@ -5,7 +5,7 @@ user:
   cookie: varchar(255)
   admin: bool
 
-tablature:
+tab:
   titre: varchar(255)
   album: varchar(255)
   cheminTab: varchar(255)
