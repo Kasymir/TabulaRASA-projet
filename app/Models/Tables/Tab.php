@@ -16,19 +16,19 @@ class Tab extends Entity {
     public $titre;     // varchar(255)
     public $album;     // varchar(255)
     public $cheminTab;     // varchar(255)
-    public $dateAjout;     // datetime
-    public $idArtiste;     // int
-    public $idGenre;     // int
-    public $idInstrument;     // int
+    public $dateAjout;     // varchar(255)
+    public $Artiste;     // varchar(255)
+    public $Genre;     // varchar(255)
+    public $Instrument;     // varchar(255)
 
     public function __construct(
         $titre = "",
         $album = "",
         $cheminTab = "",
         $dateAjout = "",
-        $idArtiste = "",
-        $idGenre = "",
-        $idInstrument = "",
+        $Artiste = "",
+        $Genre = "",
+        $Instrument = "",
     $id = false) {
         parent::__construct($id);
 
@@ -36,9 +36,9 @@ class Tab extends Entity {
         $this->album = $album;
         $this->cheminTab = $cheminTab;
         $this->dateAjout = $dateAjout;
-        $this->idArtiste = $idArtiste;
-        $this->idGenre = $idGenre;
-        $this->idInstrument = $idInstrument;
+        $this->Artiste = $Artiste;
+        $this->Genre = $Genre;
+        $this->Instrument = $Instrument;
     }
 }
 ?>

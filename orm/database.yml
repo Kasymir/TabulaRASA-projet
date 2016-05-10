@@ -9,10 +9,10 @@ tab:
   titre: varchar(255)
   album: varchar(255)
   cheminTab: varchar(255)
-  dateAjout: datetime
-  idArtiste: int
-  idGenre: int
-  idInstrument: int
+  dateAjout: varchar(255)
+  Artiste: varchar(255)
+  Genre: varchar(255)
+  Instrument: varchar(255)
 
 genre:
   nom: varchar(255)
